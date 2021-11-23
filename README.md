@@ -1,5 +1,7 @@
 # SampleAuthentication
 
+Following the blog post: https://levelup.gitconnected.com/how-to-sign-in-with-google-in-angular-and-use-jwt-based-net-core-api-authentication-rsa-6635719fb86c
+
 ## Installation
 
 1. Download angular cli
