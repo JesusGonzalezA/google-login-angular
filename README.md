@@ -1,28 +1,29 @@
 # SampleAuthentication
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+Following the blog post: https://levelup.gitconnected.com/how-to-sign-in-with-google-in-angular-and-use-jwt-based-net-core-api-authentication-rsa-6635719fb86c
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Download angular cli
+```bash
+npm install -g @angular/cli
+```
 
-## Code scaffolding
+2. Download dependencies
+```bash
+npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Run the application
 
-## Build
+1. Run the server
+```bash
+ng serve
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Now the application should be visible on http://localhost:4200/
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# google-login-angular
+2. Open the console in the developer tools of your favourite browser
+3. Click on "Sign in with google"
+<img width="908" alt="Captura de pantalla 2021-11-23 a las 16 55 09" src="https://user-images.githubusercontent.com/51116828/143047459-28d09a45-b7f4-4d43-a7fd-e9f098e03e47.png">
+4. You'll see a "SocialUser" object printed on the console. We'll use the property "idToken" to validate the token in our backend application.
